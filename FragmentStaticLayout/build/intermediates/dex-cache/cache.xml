@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\My_Mobile_App\FragmentStaticLayout\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c26e86336c750b15b276c9da4e647a04d93eeaf4">
+        <dex dex="C:\My_Mobile_App\FragmentStaticLayout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_cbb82dbc322c9e894a93d6148a84d4f4ebe5bb82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\My_Mobile_App\FragmentStaticLayout\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ff0afbb53512cddd4d65548dc54e7d98fa8fe162">
+        <dex dex="C:\My_Mobile_App\FragmentStaticLayout\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_dda3573b265c6b3120b6df435af193585502cb63\classes.dex" />
+    </item>
+
+</items>

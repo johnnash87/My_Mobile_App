@@ -11,7 +11,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.ToggleButton;
+
+import org.w3c.dom.Text;
 
 import java.util.Random;
 
@@ -70,7 +75,49 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(helloAndroidIntent);
             }
         });
-    }
+
+        final TextView checked = (TextView) findViewById(R.id.checkBox);
+        final CheckBox checkedbox = (CheckBox) findViewById(R.id.checkBox);
+        checked.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (checkedbox.isChecked()){
+                    checked.setText(R.string.is_checked);
+                    checked.setBackgroundColor(getResources().getColor(R.color.button_clicked));
+
+            }
+            else{
+                checked.setText(R.string.not_clicked);
+                checked.setBackgroundColor(getResources().getColor(R.color.white));
+            }
+            }
+        });
+
+
+        final TextView clickTextView = (TextView) findViewById(R.id.toggleButton);
+        final ToggleButton clicked = (ToggleButton) findViewById(R.id.toggleButton);
+        clicked.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (clicked.isChecked()) {
+                    clickTextView.setText(R.string.say_clicked);
+                    clicked.setBackgroundColor(getResources().getColor(R.color.white));
+                } else {
+                    clickTextView.setText(R.string.not_clicked);
+                    clicked.setBackgroundColor(getResources().getColor(R.color.button_clicked));
+                }
+            }
+        });
+
+        final TextView helloTextView = (TextView) findViewById(R.id.hellotextView);
+        final Button helloButton = (Button) findViewById(R.id.hello_Button);
+        helloButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                helloTextView.setText(R.string.say_hello);
+                helloButton.setBackgroundColor(getResources().getColor(R.color.black));
+            }
+        });}
 
     private boolean checkPassword(Editable uname, Editable passwd) {
         // Just pretending to extract text and check password

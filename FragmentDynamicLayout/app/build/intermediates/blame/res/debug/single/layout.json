@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\My_Mobile_App\\FragmentDynamicLayout\\app\\build\\intermediates\\res\\merged\\debug\\layout\\quote_fragment.xml",
+        "source": "C:\\My_Mobile_App\\FragmentDynamicLayout\\app\\src\\main\\res\\layout\\quote_fragment.xml"
+    },
+    {
+        "merged": "C:\\My_Mobile_App\\FragmentDynamicLayout\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\My_Mobile_App\\FragmentDynamicLayout\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\My_Mobile_App\\FragmentDynamicLayout\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title_item.xml",
+        "source": "C:\\My_Mobile_App\\FragmentDynamicLayout\\app\\src\\main\\res\\layout\\title_item.xml"
+    }
+]

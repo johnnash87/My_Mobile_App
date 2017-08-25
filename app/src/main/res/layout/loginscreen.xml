@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
 
     <TextView
         android:id="@+id/username_textview"
@@ -46,7 +48,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="@string/registration_string" >
+        android:text="@string/registration_string"
+        tools:layout_gravity="bottom">
     </Button>
+
+    <Button
+        android:text="Say_hello"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hello_Button"
+        android:layout_gravity="bottom" />
+
+    <TextView
+        android:text="LargeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hellotextView" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton"
+        android:textOff="@string/say_clicked"
+        android:textOn="@string/not_clicked" />
+
+    <CheckBox
+        android:text="IsChecked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+
+    <RatingBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar" />
 
 </LinearLayout>

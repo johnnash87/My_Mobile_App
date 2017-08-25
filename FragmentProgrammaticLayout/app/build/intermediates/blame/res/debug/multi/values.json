@@ -1,0 +1,68 @@
+[
+    {
+        "outputFile": "C:\\My_Mobile_App\\FragmentProgrammaticLayout\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 19,
+                    "endOffset": 500
+                },
+                "from": {
+                    "file": "C:\\My_Mobile_App\\FragmentProgrammaticLayout\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 300,
+                        "endLine": 12,
+                        "endColumn": 19,
+                        "endOffset": 745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 505,
+                    "endLine": 11,
+                    "endColumn": 19,
+                    "endOffset": 681
+                },
+                "from": {
+                    "file": "C:\\My_Mobile_App\\FragmentProgrammaticLayout\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 119,
+                        "endLine": 7,
+                        "endColumn": 19,
+                        "endOffset": 295
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 686,
+                    "endColumn": 63,
+                    "endOffset": 745
+                },
+                "from": {
+                    "file": "C:\\My_Mobile_App\\FragmentProgrammaticLayout\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            }
+        ]
+    }
+]
