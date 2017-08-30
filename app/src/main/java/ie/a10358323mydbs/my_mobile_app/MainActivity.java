@@ -20,7 +20,11 @@ import org.w3c.dom.Text;
 
 import java.util.Random;
 
+
+
 public class MainActivity extends AppCompatActivity {
+
+    //     allow user to select date/>time they like to be notified with date/timepicker"
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

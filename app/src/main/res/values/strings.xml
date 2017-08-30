@@ -14,4 +14,7 @@
     <string name="say_clicked">Clicked</string>
     <string name="not_clicked">Not Clicked</string>
     <string name="is_checked">Checked</string>
+    <string name="change_the_time_string">Change the time</string>
+    <string name="change_the_date_string">Change the date</string>
+
 </resources>

@@ -36,28 +36,30 @@
         android:inputType="textPassword">
     </EditText>
 
-    <Button
-        android:id="@+id/login_button"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="@string/login_string" >
-    </Button>
-    <Button
-        android:id="@+id/registration_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="@string/registration_string"
-        tools:layout_gravity="bottom">
-    </Button>
+        android:orientation="horizontal">
 
-    <Button
-        android:text="Say_hello"
-        android:layout_width="168dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/hello_Button"
-        android:layout_gravity="bottom" />
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/login_string" >
+        </Button>
+
+        <Button
+            android:id="@+id/registration_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/registration_string"
+            tools:layout_gravity="bottom">
+        </Button>
+
+    </LinearLayout>
 
     <TextView
         android:text="LargeText"
@@ -79,9 +81,37 @@
         android:layout_height="wrap_content"
         android:id="@+id/checkBox" />
 
-    <RatingBar
+    <TimePicker
         android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:id="@+id/timePicker" />
+
+    <TextView
+        android:id="@+id/timeDisplay"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar" />
+        android:text=""
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/pickTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_the_time_string"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_the_date_string"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp" />
 
 </LinearLayout>
