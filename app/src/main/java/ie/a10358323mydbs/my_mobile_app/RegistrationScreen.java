@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -36,11 +38,33 @@ public class RegistrationScreen extends AppCompatActivity {
             startActivity(helloAndroidIntent);
             }
         });
+        final TextView tv = (TextView) findViewById(R.id.textView);
+
+
+        // Define a generic listener for all three RadioButtons in the RadioGroup
+        final View.OnClickListener radioListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RadioButton rb = (RadioButton) v;
+                tv.setText(rb.getText() + " chosen");
+            }
+        };
+
+        final RadioButton male = (RadioButton) findViewById(R.id.male);
+        // Called when RadioButton choice1 is clicked
+        male.setOnClickListener(radioListener);
+
+        final RadioButton female = (RadioButton) findViewById(R.id.female);
+        // Called when RadioButton choice2 is clicked
+        female.setOnClickListener(radioListener);
+
     }
 
     private boolean checkPassword(Editable uname, Editable passwd) {
         // Just pretending to extract text and check password
         return new Random().nextBoolean();
     }
+
+
 
 }

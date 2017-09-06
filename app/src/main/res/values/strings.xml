@@ -11,10 +11,11 @@
     <string name="enter_email_hint">Enter Email</string>
     <string name="registration_string">Register</string>
     <string name="say_hello">Say Hello</string>
-    <string name="say_clicked">Clicked</string>
-    <string name="not_clicked">Not Clicked</string>
-    <string name="is_checked">Checked</string>
-    <string name="change_the_time_string">Change the time</string>
-    <string name="change_the_date_string">Change the date</string>
+    <string name="welcome">Welcome Bikers!</string>
+    <string name="age">Enter age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+
 
 </resources>

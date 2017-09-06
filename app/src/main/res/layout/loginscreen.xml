@@ -7,6 +7,14 @@
     android:layout_gravity="bottom">
 
     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/welcome"
+        android:textSize="40sp" />
+
+
+    <TextView
         android:id="@+id/username_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,58 +68,5 @@
         </Button>
 
     </LinearLayout>
-
-    <TextView
-        android:text="LargeText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/hellotextView" />
-
-    <ToggleButton
-        android:text="ToggleButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toggleButton"
-        android:textOff="@string/say_clicked"
-        android:textOn="@string/not_clicked" />
-
-    <CheckBox
-        android:text="IsChecked"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox" />
-
-    <TimePicker
-        android:layout_width="match_parent"
-        android:layout_height="99dp"
-        android:id="@+id/timePicker" />
-
-    <TextView
-        android:id="@+id/timeDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/pickTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/change_the_time_string"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/pickDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/change_the_date_string"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/dateDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="24sp" />
 
 </LinearLayout>

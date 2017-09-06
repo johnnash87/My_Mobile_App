@@ -33,26 +33,72 @@
         android:hint="@string/enter_password_hint" 
         android:inputType="textPassword">
     </EditText>
+
     <TextView
         android:id="@+id/email_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email_string" >
     </TextView>
+
     <EditText
-        android:id="@+id/email_edittext"
+        android:id="@+id/age_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_email_hint"
         android:inputType="textEmailAddress">
     </EditText>
 
+    <TextView
+        android:id="@+id/age_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="18"
+        android:inputType="number">
+    </EditText>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textSize="24sp">
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="24sp"/>
+
+    </RadioGroup>
+
     <Button
         android:id="@+id/registration_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="Registration" >
+        android:text="@string/registration_string" >
     </Button>
 
 </LinearLayout>
