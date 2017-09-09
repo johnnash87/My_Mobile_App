@@ -55,11 +55,11 @@ public class MainActivity extends AppCompatActivity {
 
                     // Create an explicit Intent for starting the HelloAndroid
                     // Activity
-                    Intent helloAndroidIntent = new Intent(MainActivity.this,
-                            HelloAndroid.class);
+                    Intent JourneyIntent = new Intent(MainActivity.this,
+                            Journeys.class);
 
                     // Use the Intent to start the HelloAndroid Activity
-                    startActivity(helloAndroidIntent);
+                    startActivity(JourneyIntent);
                 } else {
                     uname.setText("");
                     passwd.setText("");

@@ -16,6 +16,10 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="gender">Gender</string>
-
+    <string name="starting_map">Starting Location</string>
+    <string name="start_location">Enter starting location</string>
+    <string name="finishing_map">Finishing Location</string>
+    <string name="finish_location">Enter finishing location</string>
+    <string name="change_the_date_string">Click to enter date of journey</string>
 
 </resources>

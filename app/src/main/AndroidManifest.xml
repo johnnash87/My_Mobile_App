@@ -26,6 +26,14 @@
             android:name=".RegistrationScreen"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".Journeys"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".DatePickerActivity"
+            android:label="@string/app_name">
+            </activity>
+
     </application>
 
 </manifest>

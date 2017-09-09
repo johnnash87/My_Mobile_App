@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/startstuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/start_location"
+        android:inputType="textPostalAddress"
+        android:layout_below="@+id/dateDisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/starting_map"
+        android:layout_below="@+id/startstuff"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/finish_location"
+        android:inputType="textPostalAddress"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/startButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finishing_map"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/finish"
+        android:layout_alignStart="@+id/startButton" />
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter date"
+        android:textSize="24sp"
+        android:layout_alignStart="@+id/finishButton"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_the_date_string"
+        android:textSize="12sp"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/finishButton"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+
+
