@@ -3,7 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="username_string">UserName</string>
     <string name="password_string">Password</string>
-    <string name="enter_username_hint">Enter username</string>
+    <string name="enter_username_hint">Enter User Name</string>
     <string name="enter_password_hint">Enter Password</string>
     <string name="login_string">Login</string>
     <string name="hello">Hello Android!</string>
@@ -11,7 +11,7 @@
     <string name="enter_email_hint">Enter Email</string>
     <string name="registration_string">Register</string>
     <string name="say_hello">Say Hello</string>
-    <string name="welcome">Welcome Bikers!</string>
+    <string name="welcome">Welcome to the Dublin Bike App!</string>
     <string name="age">Enter age</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
@@ -21,5 +21,8 @@
     <string name="finishing_map">Finishing Location</string>
     <string name="finish_location">Enter finishing location</string>
     <string name="change_the_date_string">Click to enter date of journey</string>
+    <string name="fix_string">Fix</string>
+    <string name="load_data_string">Load Data</string>
+
 
 </resources>

@@ -4,45 +4,44 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:layout_gravity="bottom">
+    android:layout_gravity="bottom"
+    android:background ="@color/colorPrimary" >
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/welcome"
-        android:textSize="40sp" />
-
-
-    <TextView
-        android:id="@+id/username_textview"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/username_string" >
-    </TextView>
+        android:layout_gravity ="center"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/username_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_username_hint" 
-        android:inputType="text">
-    </EditText>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Fuck this app and its stupid face"
+            android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/password_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/password_string" >
-    </TextView>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_username_hint"
+            android:inputType="text"
+            android:textColor="@color/white">
+        </EditText>
 
-    <EditText
-        android:id="@+id/password_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_password_hint" 
-        android:inputType="textPassword">
-    </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password_hint"
+            android:inputType="textPassword"
+            android:textColor="@color/white">
+        </EditText>
+
+
+
+    </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -55,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="@string/login_string" >
+            android:text="@string/login_string">
         </Button>
 
         <Button
@@ -63,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="@string/registration_string"
+            android:text="Click here to register"
             tools:layout_gravity="bottom">
         </Button>
 
