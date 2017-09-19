@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Week5_ModernArt</string>
+    <string name="more_info">More Information</string>
+    <string name="title">Isnt MOMA awesome?</string>
+    <string name="message">Click here to learn more!</string>
+    <string name="click_yes">Visit MOMA </string>
+    <string name="click_no">Not Now</string>
+</resources>
