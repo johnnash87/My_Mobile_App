@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/regcolor"
-    android:padding="15dp">
+    android:layout_gravity="bottom"
+    android:background ="@color/colorPrimary" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,10 +17,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="User Login"
-            android:id="@+id/textViewSignUpView"
+            android:text="User Register"
+            android:id="@+id/textViewRegister"
             android:layout_gravity="center_horizontal"
             />
+
 
         <EditText
             android:layout_margin="15dp"
@@ -44,11 +45,12 @@
 
         <Button
             android:layout_margin="15dp"
-            android:id="@+id/button_Login"
+            android:id="@+id/button_Register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="@string/login_string">
+            android:text="Register"
+            tools:layout_gravity="bottom">
         </Button>
 
         <TextView
@@ -56,10 +58,8 @@
             android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Not have an account? Sign up here"
+            android:text="Already Registered? Sign up here"
             android:id="@+id/textViewSignUp"/>
 
-
+        </LinearLayout>
     </LinearLayout>
-
-</LinearLayout>

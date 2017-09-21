@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="ie.a10358323mydbs.my_mobile_app.LoginActivity"
+    tools:context="ie.a10358323mydbs.my_mobile_app.RegisterActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView

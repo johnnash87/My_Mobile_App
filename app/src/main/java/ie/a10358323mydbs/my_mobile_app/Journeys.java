@@ -60,11 +60,10 @@ public class Journeys extends Activity {
         datePicker.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent helloAndroidIntent = new Intent(Journeys.this,
+                Intent JSONIntent = new Intent(Journeys.this,
                         DatePickerActivity.class);
 
-                // Use the Intent to start the HelloAndroid Activity
-                startActivity(helloAndroidIntent);
+                startActivity(JSONIntent);
             }
         });
 
