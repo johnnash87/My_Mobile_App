@@ -32,9 +32,6 @@
             android:name=".Journeys"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name=".UserDatabase"
-            android:label="@string/app_name">
-            </activity>
         <activity android:name=".NetworkingAndroidHttpClientJSONActivity"
             android:label="string/app_name">
         </activity>

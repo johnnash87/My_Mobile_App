@@ -19,9 +19,6 @@ public class RegistrationScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registration);
 
-        final EditText uname = (EditText) findViewById(R.id.username);
-        final EditText passwd = (EditText) findViewById(R.id.password);
-
         final Button registrationButton = (Button) findViewById(R.id.registration_button);
         registrationButton.setOnClickListener(new View.OnClickListener() {
 

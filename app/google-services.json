@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "730137572287",
+    "firebase_url": "https://dublin-bikes-database.firebaseio.com",
+    "project_id": "dublin-bikes-database",
+    "storage_bucket": "dublin-bikes-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730137572287:android:4ed5e93552c1681b",
+        "android_client_info": {
+          "package_name": "ie.a10358323mydbs.my_mobile_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730137572287-bldtbhmsig87ekudeua3brgjkr3gk04g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA85pH64Yx9bzDvv5h253IM8Wi38WokE30"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
