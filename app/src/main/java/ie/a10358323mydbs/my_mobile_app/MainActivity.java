@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     private DatabaseReference databaseReference;
 	private Button buttonSave;
     private EditText editTextName, editTextAddress;
-    private Button buttonStation;
 
 	private Button buttonChoose, buttonUpload;
 	private ImageView imageView;
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		imageView = (ImageView) findViewById(R.id.imageView);
 		buttonChoose=(Button) findViewById(R.id.buttonChoose);
 		buttonUpload =(Button) findViewById(R.id.buttonUpload);
-        buttonStation= (Button) findViewById(R.id.buttonStation);
 
 		if(firebaseAuth.getCurrentUser()==null)
 		{
@@ -78,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		buttonUpload.setOnClickListener(this);
 		buttonLogout.setOnClickListener(this);
 		buttonSave.setOnClickListener(this);
-        buttonStation.setOnClickListener(this);
 	}
 
 	private void saveUserInformation(){
@@ -149,8 +146,5 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		if(view==buttonUpload){
 			uploadFile();
 		}
-        if (view == buttonStation) {
-            startActivity(new Intent(this, NetworkingAndroidHttpClientJSONActivity.class));
-        }
-    }
+	}
 }

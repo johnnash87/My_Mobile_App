@@ -28,16 +28,6 @@ public class NetworkingAndroidHttpClientJSONActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		new HttpGetTask().execute();
 		final ListView view = getListView();
-		/*view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> adapterView, View v, int i, long l) {
-				Cursor cursor = (Cursor)view.getItemAtPosition(i);
-				String anything = cursor.getString(cursor.getColumnIndex("Bike stand name"));
-				Intent intent = new Intent(NetworkingAndroidHttpClientJSONActivity.this, StartingFinishingLocation.class);
-				intent.putExtra("thing",anything);
-				startActivity(intent);
-			}
-		});*/
 	}
 
 	private class HttpGetTask extends AsyncTask<Void, Void, List<String>> {
@@ -78,7 +68,7 @@ public class NetworkingAndroidHttpClientJSONActivity extends ListActivity {
 		private static final String POSITION_TAG = "position";
 		private static final String LONGTITUDE_TAG = "lng";
 		private static final String NUMBER_TAG = "number";
-		// use map activity
+
 		@Override
 		public List<String> handleResponse(HttpResponse response)
 				throws ClientProtocolException, IOException {
@@ -86,34 +76,12 @@ public class NetworkingAndroidHttpClientJSONActivity extends ListActivity {
 			String JSONResponse = new BasicResponseHandler()
 					.handleResponse(response);
 			try {
-
-				// Get top-level JSON Object - a Map
-				//JSONObject responseObject = (JSONObject) new JSONTokener(
-				//		JSONResponse).nextValue();
-
-				// Extract value of "earthquakes" key -- a List
 				JSONArray stations = (JSONArray)new JSONTokener(JSONResponse).nextValue();
-
-				// Iterate over earthquakes list
 				for (int idx = 0; idx < stations.length(); idx++) {
 
-					// Get single earthquake data - a Map
 					JSONObject station = (JSONObject) stations.get(idx);
-
-					// Summarize earthquake data as a string and add it to
-					// result
 					result.add("Bike stand name:" + station.get(NAME_TAG) + "\nNumber:" + station.get(NUMBER_TAG) +"\nPosition:" + station.get(POSITION_TAG));
-					//		+ NUMBER_TAG + " = "
-					//		+ station.get(NUMBER_TAG) + "\n"
-					//		+ NAME_TAG + " = "
-					//		+ station.get(NAME_TAG) + "\n"
-					//		+ ADDRESS_TAG + " = "
-					//		+ station.getString(ADDRESS_TAG) + "\n"
-					//+ LATITUDE_TAG + " = "
-					//+ station.get(LATITUDE_TAG) + "\n"
-					//+ LONGTITUDE_TAG + " was "
-					//+ station.get(LONGTITUDE_TAG) + "\n"
-					//      + "Source = " + station.getString("src"));
+
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();

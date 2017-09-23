@@ -24,17 +24,6 @@
             android:layout_gravity="center_horizontal"
             />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextAddress"
-            android:hint="Enter Address"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextName"
-            android:hint="Enter Name"/>
 
         <Button
             android:id="@+id/button_Save"
@@ -56,11 +45,6 @@
             android:text="Click here to upload picture"
             android:id="@+id/buttonUpload"/>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Click here to view Bike stations"
-            android:id="@+id/buttonStation"/>
-        <Button
             android:layout_margin="15dp"
             android:id="@+id/button_Logout"
             android:layout_width="wrap_content"
@@ -68,13 +52,5 @@
             android:layout_gravity="center_horizontal"
             android:text="Logout"/>
 
-
-
+   </LinearLayout>
     </LinearLayout>
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_below="@id/layout"
-        android:layout_width="match_parent"
-        android:layout_height="13dp" />
-
-</LinearLayout>
