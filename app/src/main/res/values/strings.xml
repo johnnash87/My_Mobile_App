@@ -24,6 +24,7 @@
     <string name="fix_string">Fix</string>
     <string name="load_data_string">Load Data</string>
     <string name="title_activity_camera_upload">CameraUpload</string>
+    <string name="title_activity_record_journey">RecordJourney</string>
 
 
 </resources>

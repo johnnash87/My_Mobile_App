@@ -13,7 +13,7 @@ import android.widget.EditText;
 // Several Activity lifecycle methods are instrumented to emit LogCat output
 // so you can follow this class' lifecycle
 
-public class Journeys extends Activity {
+public class StartingFinishingLocation extends Activity {
 
     private final String TAG = "MapLocation";
 
@@ -63,7 +63,7 @@ public class Journeys extends Activity {
         datePicker.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent JSONIntent = new Intent(Journeys.this,
+                Intent JSONIntent = new Intent(StartingFinishingLocation.this,
                         DatePickerActivity.class);
 
                 startActivity(JSONIntent);
