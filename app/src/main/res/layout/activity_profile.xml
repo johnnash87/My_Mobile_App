@@ -19,36 +19,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Main Menu"
+            android:text="Journey Information"
             android:id="@+id/textViewUserEmail"
             android:layout_gravity="center_horizontal"
             />
 
-        <Button
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View Bike Stations"
-            android:id="@+id/buttonStation"/>
+            android:id="@+id/editTextAddress"
+            android:hint="Enter Address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:hint="Enter Name"/>
 
         <Button
+            android:id="@+id/button_Save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Record a Journey"
-            android:id="@+id/buttonJourney"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Profile Information"
-            android:id="@+id/buttonProfile"/>
-        />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Take a picture"
-            android:id="@+id/buttonCamera"/>
-        />
+            android:text="Save Profile"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"/>
         <Button
             android:layout_margin="15dp"
             android:id="@+id/button_Logout"
@@ -57,5 +51,12 @@
             android:layout_gravity="center_horizontal"
             android:text="Logout"/>
 
-   </LinearLayout>
+
     </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="13dp" />
+
+</LinearLayout>

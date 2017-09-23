@@ -12,7 +12,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -31,8 +30,6 @@ public class RecordJourney extends AppCompatActivity implements OnClickListener{
 
     private static final int PICK_IMAGE_REQUEST = 234;
     private FirebaseAuth firebaseAuth;
-    private TextView textViewUserEmail;
-    private Button buttonLogout;
     private DatabaseReference databaseReference;
     private Button buttonSave;
     private EditText editTextName, editTextAddress;
@@ -45,7 +42,7 @@ public class RecordJourney extends AppCompatActivity implements OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.journey);
 
         firebaseAuth =FirebaseAuth.getInstance();
         imageView = (ImageView) findViewById(R.id.imageView);
@@ -67,14 +64,10 @@ public class RecordJourney extends AppCompatActivity implements OnClickListener{
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
-        textViewUserEmail.setText("Welcome "+user.getEmail());
-        buttonLogout = (Button)findViewById(R.id.button_Logout);
         storageReference = FirebaseStorage.getInstance().getReference();
 
         buttonChoose.setOnClickListener(this);
         buttonUpload.setOnClickListener(this);
-        buttonLogout.setOnClickListener(this);
         buttonSave.setOnClickListener(this);
     }
 
@@ -115,7 +108,6 @@ public class RecordJourney extends AppCompatActivity implements OnClickListener{
 
         }
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -132,11 +124,7 @@ public class RecordJourney extends AppCompatActivity implements OnClickListener{
 
     @Override
     public void onClick(View view) {
-        if (view==buttonLogout){
-            firebaseAuth.signOut();
-            finish();
-            startActivity(new Intent(this, LoginActivity.class));
-        }
+
         if(view==buttonSave){
             saveUserInformation();
         }

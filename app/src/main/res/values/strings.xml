@@ -25,6 +25,7 @@
     <string name="load_data_string">Load Data</string>
     <string name="title_activity_camera_upload">CameraUpload</string>
     <string name="title_activity_record_journey">RecordJourney</string>
+    <string name="title_activity_profile">Profile</string>
 
 
 </resources>
