@@ -17,8 +17,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="User Login"
+            android:text="Welcome to Dublin Bikes!
+            User Login"
             android:id="@+id/textViewSignUpView"
+            android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
             />
 
@@ -29,6 +31,7 @@
             android:layout_height="wrap_content"
             android:hint="Enter your email"
             android:inputType="textEmailAddress"
+            android:background="@color/colorPrimary"
             android:textColor="@color/white">
         </EditText>
 
@@ -39,6 +42,7 @@
             android:layout_height="wrap_content"
             android:hint="Enter your password"
             android:inputType="textPassword"
+            android:background="@color/colorAccent"
             android:textColor="@color/white">
         </EditText>
 
@@ -57,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Not have an account? Sign up here"
+            android:textColor="@color/white"
             android:id="@+id/textViewSignUp"/>
 
 

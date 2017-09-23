@@ -7,7 +7,7 @@
     <string name="enter_password_hint">Enter Password</string>
     <string name="login_string">Login</string>
     <string name="hello">Hello Android!</string>
-    <string name ="email_string">Email</string>
+    <string name="email_string">Email</string>
     <string name="enter_email_hint">Enter Email</string>
     <string name="registration_string">Register</string>
     <string name="say_hello">Say Hello</string>
@@ -23,6 +23,7 @@
     <string name="change_the_date_string">Click to enter date of journey</string>
     <string name="fix_string">Fix</string>
     <string name="load_data_string">Load Data</string>
+    <string name="title_activity_camera_upload">CameraUpload</string>
 
 
 </resources>

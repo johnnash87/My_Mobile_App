@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main1);
+		setContentView(R.layout.activity_main);
 
 		firebaseAuth =FirebaseAuth.getInstance();
 		imageView = (ImageView) findViewById(R.id.imageView);
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		FirebaseUser user = firebaseAuth.getCurrentUser();
 
 		textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
-		textViewUserEmail.setText("Welcome"+user.getEmail());
+		textViewUserEmail.setText("Welcome "+user.getEmail());
 		buttonLogout = (Button)findViewById(R.id.button_Logout);
 		storageReference = FirebaseStorage.getInstance().getReference();
 

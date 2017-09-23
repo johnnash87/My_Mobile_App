@@ -1,7 +1,5 @@
 package ie.a10358323mydbs.my_mobile_app;
 
-import java.lang.reflect.Constructor;
-
 /**
  * Created by Pat Nash on 21/09/2017.
  */

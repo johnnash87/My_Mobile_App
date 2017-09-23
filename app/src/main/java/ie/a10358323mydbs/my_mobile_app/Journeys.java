@@ -28,25 +28,28 @@ public class Journeys extends Activity {
         setContentView(R.layout.main);
 
         // Initialize UI elements
+
+
         final EditText startText = (EditText) findViewById(R.id.startstuff);
-        final Button startButton = (Button) findViewById(R.id.startButton);
         final EditText finishText = (EditText) findViewById(R.id.finish);
         final Button finishButton = (Button) findViewById(R.id.finishButton);
         final Button datePicker = (Button) findViewById(R.id.pickDate);
 
-        startButton.setOnClickListener(new OnClickListener() {
+        finishButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
 
                     // Process text for network transmission
-                    String address = startText.getText().toString();
-                    address = address.replace(' ', '+');
+                    String origin = startText.getText().toString();
+                    origin = origin.replace(' ', '+');
+                    String destination = finishText.getText().toString();
+                    destination = destination.replace(' ', '+');
 
                     // Create Intent object for starting Google Maps application
                     Intent geoIntent = new Intent(
                             android.content.Intent.ACTION_VIEW, Uri
-                            .parse("geo:0,0?q=" + address));
+                            .parse("geo:0,0?q=" + origin));
 
                     // Use the Intent to start Google Maps application using Activity.startActivity()
                     startActivity(geoIntent);
@@ -67,34 +70,6 @@ public class Journeys extends Activity {
             }
         });
 
-
-        // Link UI elements to actions in code
-        finishButton.setOnClickListener(new OnClickListener() {
-
-            // Called when user clicks the Show Map button
-            public void onClick(View v) {
-                try {
-
-                    // Process text for network transmission
-                    String address = finishText.getText().toString();
-                    address = address.replace(' ', '+');
-
-                    // Create Intent object for starting Google Maps application
-                    Intent geoIntent = new Intent(
-                            android.content.Intent.ACTION_VIEW, Uri
-                                    .parse("geo:0,0?q=" + address));
-
-                    // Use the Intent to start Google Maps application using Activity.startActivity()
-                    startActivity(geoIntent);
-
-                } catch (Exception e) {
-                    // Log any error messages to LogCat using Log.e()
-                    Log.e(TAG, e.toString());
-
-                }
-
-            }
-        });
     }
 
 

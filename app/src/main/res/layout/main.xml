@@ -3,7 +3,8 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
 
     <EditText
         android:id="@+id/startstuff"
@@ -11,26 +12,18 @@
         android:layout_height="wrap_content"
         android:hint="@string/start_location"
         android:inputType="textPostalAddress"
-        android:layout_below="@+id/dateDisplay"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp" />
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/starting_map"
-        android:layout_below="@+id/startstuff"
-        android:layout_centerHorizontal="true" />
 
     <EditText
+        android:layout_below="@+id/dateDisplay"
         android:id="@+id/finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/finish_location"
         android:inputType="textPostalAddress"
         android:layout_marginTop="17dp"
-        android:layout_below="@+id/startButton"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -39,8 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/finishing_map"
         android:layout_marginTop="22dp"
-        android:layout_below="@+id/finish"
-        android:layout_alignStart="@+id/startButton" />
+        android:layout_below="@+id/finish"/>
 
     <TextView
         android:id="@+id/dateDisplay"

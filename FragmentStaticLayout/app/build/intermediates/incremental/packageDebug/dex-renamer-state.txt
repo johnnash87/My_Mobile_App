@@ -1,7 +1,0 @@
-#Wed Aug 23 12:49:45 BST 2017
-base.0=C\:\\My_Mobile_App\\FragmentStaticLayout\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_dda3573b265c6b3120b6df435af193585502cb63
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\My_Mobile_App\\FragmentStaticLayout\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_cbb82dbc322c9e894a93d6148a84d4f4ebe5bb82\\classes.dex
-base.1=C\:\\My_Mobile_App\\FragmentStaticLayout\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_cbb82dbc322c9e894a93d6148a84d4f4ebe5bb82
-file.0=C\:\\My_Mobile_App\\FragmentStaticLayout\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_dda3573b265c6b3120b6df435af193585502cb63\\classes.dex

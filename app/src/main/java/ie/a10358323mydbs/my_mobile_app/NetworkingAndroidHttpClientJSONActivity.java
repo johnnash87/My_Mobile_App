@@ -1,8 +1,15 @@
 package ie.a10358323mydbs.my_mobile_app;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import android.app.ListActivity;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.http.AndroidHttpClient;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -14,12 +21,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import android.app.ListActivity;
-import android.net.http.AndroidHttpClient;
-import android.os.AsyncTask;
-import android.os.Build;
-import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NetworkingAndroidHttpClientJSONActivity extends ListActivity {
 
@@ -27,6 +31,17 @@ public class NetworkingAndroidHttpClientJSONActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		new HttpGetTask().execute();
+		final ListView view = getListView();
+		view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View v, int i, long l) {
+				Cursor cursor = (Cursor)view.getItemAtPosition(i);
+				String anything = cursor.getString(cursor.getColumnIndex("Bike stand name"));
+				Intent intent = new Intent(NetworkingAndroidHttpClientJSONActivity.this, Journeys.class);
+				intent.putExtra("thing",anything);
+				startActivity(intent);
+			}
+		});
 	}
 
 	private class HttpGetTask extends AsyncTask<Void, Void, List<String>> {
