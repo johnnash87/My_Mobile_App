@@ -20,8 +20,6 @@ import com.google.firebase.storage.UploadTask;
 import java.io.ByteArrayOutputStream;
 import java.util.Date;
 
-import static ie.a10358323mydbs.my_mobile_app.R.layout.camera;
-
 public class CameraUpload extends AppCompatActivity {
 
     private Button mUploadButton;
@@ -33,7 +31,7 @@ public class CameraUpload extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(camera);
+        setContentView(R.layout.camera);
 
         mStorage = FirebaseStorage.getInstance().getReference();
 

@@ -1,60 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/RelativeLayout1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    android:gravity="center"
+    android:background="@color/background"
+    android:padding="15dp">
 
-    <EditText
-        android:id="@+id/startstuff"
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_centerVertical ="true"
+        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/start_location"
-        android:inputType="textPostalAddress"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Main Menu"
+            android:id="@+id/textViewUserEmail"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Bike Stations"
+            android:id="@+id/buttonStation"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Record a Journey"
+            android:id="@+id/buttonJourney"/>
 
 
-    <EditText
-        android:layout_below="@+id/dateDisplay"
-        android:id="@+id/finish"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/finish_location"
-        android:inputType="textPostalAddress"
-        android:layout_marginTop="17dp"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take a picture"
+            android:id="@+id/buttonCamera"/>
+        />
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/button_Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Logout"/>
 
-    <Button
-        android:id="@+id/finishButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/finishing_map"
-        android:layout_marginTop="22dp"
-        android:layout_below="@+id/finish"/>
-
-    <TextView
-        android:id="@+id/dateDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter date"
-        android:textSize="24sp"
-        android:layout_alignStart="@+id/finishButton"
-        android:layout_marginStart="15dp" />
-
-    <Button
-        android:id="@+id/pickDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/change_the_date_string"
-        android:textSize="12sp"
-        android:layout_marginTop="46dp"
-        android:layout_below="@+id/finishButton"
-        android:layout_centerHorizontal="true" />
-
-
-
-</RelativeLayout>
-
-
+   </LinearLayout>
+    </LinearLayout>

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.main);
 
 		firebaseAuth =FirebaseAuth.getInstance();
 		buttonStation=(Button) findViewById(R.id.buttonStation);
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		}
 		if(view==buttonJourney){
 			finish();
-			startActivity(new Intent(this, RecordJourney.class));
+			startActivity(new Intent(this, Journey.class));
 		}
 		if(view==buttonCamera){
 			finish();

@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/colorPrimary"
+    android:background="@color/background"
     android:padding="15dp">
 
     <LinearLayout
@@ -13,7 +13,8 @@
         android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,25 +28,32 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextAddress"
-            android:hint="Enter Address"/>
+            android:id="@+id/editTextName"
+            android:hint="Name"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextName"
-            android:hint="Enter Name"/>
+            android:id="@+id/editTextAddress"
+            android:hint="Address"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Click here to select a picture"
             android:id="@+id/buttonChoose"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Click here to upload picture"
             android:id="@+id/buttonUpload"/>
+
+        <Button
+            android:id="@+id/button_Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Journey"
+            android:layout_gravity="center_horizontal"/>
         <Button
             android:layout_margin="15dp"
             android:id="@+id/button_Logout"
@@ -53,20 +61,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Logout"/>
-        <Button
-            android:id="@+id/button_Save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Journey"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="15dp"/>
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_below="@id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
 
     </LinearLayout>
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_below="@id/layout"
-        android:layout_width="match_parent"
-        android:layout_height="13dp" />
 
 </LinearLayout>

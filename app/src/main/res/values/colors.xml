@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name ="background">#3E50B4</color>
     <color name="colorPrimary">#26ae90</color>
     <color name="regcolor">#2e3237</color>
     <color name="regbutton">#ea4c88</color>

@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class Profile extends AppCompatActivity implements OnClickListener{
+public class Journey extends AppCompatActivity implements OnClickListener{
 
     private FirebaseAuth firebaseAuth;
     private Button buttonLogout;
@@ -31,7 +31,7 @@ public class Profile extends AppCompatActivity implements OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.journey);
 
         firebaseAuth =FirebaseAuth.getInstance();
 
