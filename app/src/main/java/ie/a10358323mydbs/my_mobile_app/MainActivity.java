@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		FirebaseUser user = firebaseAuth.getCurrentUser();
 
 		textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
-		textViewUserEmail.setText("Welcome to the Dublin bikes "+user.getEmail());
+		textViewUserEmail.setText("Welcome to the Dublin bikes app "+user.getEmail());
 		buttonLogout = (Button)findViewById(R.id.button_Logout);
 		storageReference = FirebaseStorage.getInstance().getReference();
 
