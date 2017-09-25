@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 	private FirebaseAuth firebaseAuth;
 	private TextView textViewUserEmail;
     private DatabaseReference databaseReference;
-	private Button buttonStation, buttonLogout, buttonJourney, buttonCamera;
+	private Button buttonStation, buttonLogout, buttonJourney, buttonCamera, buttonMap;
 	private StorageReference storageReference;
 
 	@Override
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		buttonStation=(Button) findViewById(R.id.buttonStation);
 		buttonJourney=(Button) findViewById(R.id.buttonJourney);
 		buttonCamera=(Button) findViewById(R.id.buttonCamera);
+		buttonMap=(Button) findViewById(R.id.buttonMap);
 
 		if(firebaseAuth.getCurrentUser()==null)
 		{
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		buttonStation.setOnClickListener(this);
 		buttonJourney.setOnClickListener(this);
 		buttonCamera.setOnClickListener(this);
+		buttonMap.setOnClickListener(this);
 	}
 
 
@@ -64,16 +66,16 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 			startActivity(new Intent(this, LoginActivity.class));
 		}
 		if(view==buttonStation){
-			finish();
 			startActivity(new Intent(this, NetworkingAndroidHttpClientJSONActivity.class));
 		}
 		if(view==buttonJourney){
-			finish();
 			startActivity(new Intent(this, Journey.class));
 		}
 		if(view==buttonCamera){
-			finish();
 			startActivity(new Intent(this, CameraUpload.class));
+		}
+		if(view==buttonMap){
+			startActivity(new Intent(this, MapsActivity.class));
 		}
 	}
 }

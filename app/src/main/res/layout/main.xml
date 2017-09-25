@@ -44,6 +44,12 @@
             android:id="@+id/buttonCamera"/>
         />
         <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starting/Finishing location"
+            android:id="@+id/buttonMap"/>
+        />
+        <Button
             android:layout_margin="15dp"
             android:id="@+id/button_Logout"
             android:layout_width="wrap_content"
