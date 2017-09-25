@@ -68,6 +68,7 @@ public class NetworkingAndroidHttpClientJSONActivity extends ListActivity {
 		private static final String POSITION_TAG = "position";
 		private static final String LONGTITUDE_TAG = "lng";
 		private static final String NUMBER_TAG = "number";
+		private static final String BIKESLEFT_TAG ="available_bike_stands";
 
 		@Override
 		public List<String> handleResponse(HttpResponse response)
@@ -80,7 +81,7 @@ public class NetworkingAndroidHttpClientJSONActivity extends ListActivity {
 				for (int idx = 0; idx < stations.length(); idx++) {
 
 					JSONObject station = (JSONObject) stations.get(idx);
-					result.add("Bike stand name:" + station.get(NAME_TAG) + "\nNumber:" + station.get(NUMBER_TAG) +"\nPosition:" + station.get(POSITION_TAG));
+					result.add("Bike stand name:" + station.get(NAME_TAG) + "\nNumber:" + station.get(NUMBER_TAG) +"\nPosition:" + station.get(POSITION_TAG) +"\nBikes Available:" + station.get(BIKESLEFT_TAG));
 
 				}
 			} catch (JSONException e) {
